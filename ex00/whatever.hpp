@@ -52,6 +52,6 @@ void checkFunctions(T &firstValue, T &secondValue) {
 	std::ostringstream parameters;
 	parameters << "(" << ColorFormat::formatString(templateToString(firstValue),  "blue",	"italic") << ", "
 					  << ColorFormat::formatString(templateToString(secondValue), "yellow",	"italic") << ")";
-	std::cout << "\nmin" << parameters.str() << " = " << ColorFormat::formatString(templateToString(::min(firstValue, secondValue)), "red")	<< std::endl;
-	std::cout << "max" << parameters.str() << " = " << ColorFormat::formatString(templateToString(::max(firstValue, secondValue)), "green") << std::endl;
+	std::cout << "\nmin" << parameters.str() << " = " << ColorFormat::formatString(templateToString(::min(firstValue, secondValue)), "red")	  << std::endl;
+	std::cout << "max" << parameters.str()	 << " = " << ColorFormat::formatString(templateToString(::max(firstValue, secondValue)), "green") << std::endl;
 }
